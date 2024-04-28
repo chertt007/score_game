@@ -31,7 +31,6 @@ def game_core_v3(number: int = 1) -> int:
       # в любом случае увеличиваем кол во попыток так как пошел новый круг
         count += 1
         if middle == number:
-            print(count)
             return count
         if middle < number:
         # отсекаем всю правую часть - оставляем левую и пересчитываем середину.
@@ -41,6 +40,7 @@ def game_core_v3(number: int = 1) -> int:
         # отсекаем всю левую часть - оставляем правую и пересчитываем середину.
             end = middle
             middle = int((start + end )/ 2)
+            
 random_int = np.random.randint(1, 101)        
 game_core_v3(random_int);        
 
